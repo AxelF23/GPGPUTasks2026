@@ -1,10 +1,10 @@
-В этом репозитории предложены задания для курса по вычислениям на видеокартах 2025.
+В этом репозитории предложены задания для курса по вычислениям на видеокартах 2026.
 
-[Остальные задания](https://github.com/GPGPUCourse/GPGPUTasks2025/).
+[Остальные задания](https://github.com/GPGPUCourse/GPGPUTasks2026/).
 
 # Задание 1. A + B сложение матриц (*coalesced memory access*)
 
-[![Build Status](https://github.com/GPGPUCourse/GPGPUTasks2025/actions/workflows/cmake.yml/badge.svg?branch=task01&event=push)](https://github.com/GPGPUCourse/GPGPUTasks2025/actions/workflows/cmake.yml)
+[![Build Status](https://github.com/GPGPUCourse/GPGPUTasks2026/actions/workflows/cmake.yml/badge.svg?branch=task01&event=push)](https://github.com/GPGPUCourse/GPGPUTasks2026/actions/workflows/cmake.yml)
 
 В этом задании вам предлагается выбрать API (OpenCL, CUDA или Vulkan) и попробовать написать два кернела поэлементного сложения двумерных матриц:
 
@@ -35,7 +35,7 @@
 
 1. Сделайте fork этого репозитория
 2. ``git clone ВАШ_ФОРК_РЕПОЗИТОРИЯ``
-3. ``cd GPGPUTasks2025``
+3. ``cd GPGPUTasks2026``
 4. ``git checkout task01``
 5. ``mkdir build``
 6. ``cd build``
@@ -59,7 +59,7 @@
 1. Изучить ```src/main_aplusb.cpp``` и ```src/kernels/cl/aplusb.cl``` (если хочется использовать не OpenCL - изменить используемое API в main_aplusb.cpp - см. там **TODO**)
 2. Прочитать все комментарии подряд и выполнить все **TODO** в файле ``src/main_aplusb_matrix.cpp`` и реализовать два кернела (API на ваш выбор). Для разработки под Linux рекомендуется использовать CLion. Под Windows рекомендуется использовать CLion+MSVC. Также под Windows можно использовать Visual Studio Community.
 3. Отправить **Pull-request** с названием ```Task01 <Имя> <Фамилия> <Аффиляция>```. **Аффиляция** - ваш ВУЗ (например SPbU/ITMO или HSE) или ваше место работы. Мне интересно узнать кто откуда.
-4. В тексте **PR** укажите вывод программы при исполнении на сервере Github CI (Github Actions) и на вашем компьютере (в **pre**-тэгах, чтобы сохранить форматирование, см. [пример](https://raw.githubusercontent.com/GPGPUCourse/GPGPUTasks2025/task01/.github/pull_request_example.md)). И ваш бранч должен называться так же, как и у меня - **task01**.
+4. В тексте **PR** укажите вывод программы при исполнении на сервере Github CI (Github Actions) и на вашем компьютере (в **pre**-тэгах, чтобы сохранить форматирование, см. [пример](https://raw.githubusercontent.com/GPGPUCourse/GPGPUTasks2026/task01/.github/pull_request_example.md)). И ваш бранч должен называться так же, как и у меня - **task01**.
 5. Убедиться что Github CI (Github Actions) смог скомпилировать ваш код и что все хорошо, при отправке первого задания CI может не запуститься пока я вручную не нажму ```Approve``` - если я этого не сделал в течение суток - напомните мне пожалуйста в чате курса
 6. Ждать комментарии проверки
 
