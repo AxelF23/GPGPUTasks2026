@@ -1,6 +1,6 @@
 **/*_cl.h
 **/generated_kernels/*
 .idea
-build*
+/build*/
 cmake-build*
 .vs
