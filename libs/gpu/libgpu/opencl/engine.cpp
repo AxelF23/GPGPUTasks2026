@@ -996,7 +996,7 @@ OpenCLKernelArg::OpenCLKernelArg(const gpu::shared_device_buffer &arg)
 	cl_mem_storage = arg.clmem();
 	value = &cl_mem_storage;
 	if (arg.cloffset() != 0) {
-		ocl_exception("Offset is not zero, but ignored");
+		throw ocl_exception("Offset is not zero, but ignored");
 	}
 }
 
@@ -1008,7 +1008,7 @@ OpenCLKernelArg::OpenCLKernelArg(const gpu::shared_device_buffer_typed<T> &arg)
 	cl_mem_storage = arg.clmem();
 	value = &cl_mem_storage;
 	if (arg.cloffset() != 0) {
-		ocl_exception("Offset is not zero, but ignored");
+		throw ocl_exception("Offset is not zero, but ignored");
 	}
 }
 
